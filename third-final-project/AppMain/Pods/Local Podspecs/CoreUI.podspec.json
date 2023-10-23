@@ -1,0 +1,41 @@
+{
+  "name": "CoreUI",
+  "version": "0.1.0",
+  "summary": "A short description of CoreUI.",
+  "description": "The core of the UI guidelines",
+  "homepage": "https://github.com/rafael douglas/CoreUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rafael douglas": "rafael.dougllas@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/rafael douglas/CoreUI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "15.0"
+  },
+  "source_files": "CoreUI/Classes/**/*",
+  "default_subspecs": "Release",
+  "subspecs": [
+    {
+      "name": "Debug",
+      "source_files": "CoreUI/Classes/**/*.{swift, h, m}",
+      "resources": "CoreUI/Assets/**/*.{json, xml, storyboard, xib}",
+      "testspecs": [
+        {
+          "name": "Tests",
+          "test_type": "unit",
+          "source_files": "CoreUI/Tests/**/*.{swift, h, m}"
+        }
+      ]
+    },
+    {
+      "name": "Release",
+      "vendored_frameworks": "Framework/CoreUI.framework"
+    }
+  ]
+}

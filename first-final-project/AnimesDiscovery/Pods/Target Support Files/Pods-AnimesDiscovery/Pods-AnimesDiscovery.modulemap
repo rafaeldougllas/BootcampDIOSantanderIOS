@@ -1,0 +1,6 @@
+framework module Pods_AnimesDiscovery {
+  umbrella header "Pods-AnimesDiscovery-umbrella.h"
+
+  export *
+  module * { export * }
+}
