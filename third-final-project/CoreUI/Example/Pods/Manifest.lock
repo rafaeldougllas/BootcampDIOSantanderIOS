@@ -1,0 +1,18 @@
+PODS:
+  - CoreUI (0.1.0):
+    - CoreUI/Release (= 0.1.0)
+  - CoreUI/Release (0.1.0)
+
+DEPENDENCIES:
+  - CoreUI (from `../`)
+
+EXTERNAL SOURCES:
+  CoreUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CoreUI: bdd73498ca1fb4fc7a4d8f1b219f582bcbf9a7c4
+
+PODFILE CHECKSUM: 2bccf9832a3974685865732a8a6f2a5188a4d827
+
+COCOAPODS: 1.13.0
