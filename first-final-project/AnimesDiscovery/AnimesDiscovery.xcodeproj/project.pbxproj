@@ -9,20 +9,19 @@
 /* Begin PBXBuildFile section */
 		3A22136E2AE588D000511D42 /* AnimesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22136D2AE588D000511D42 /* AnimesListTableViewController.swift */; };
 		3A2213712AE588FD00511D42 /* AnimesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22136F2AE588FD00511D42 /* AnimesListTableViewCell.swift */; };
-		3A2213722AE588FD00511D42 /* AnimesListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2213702AE588FD00511D42 /* AnimesListTableViewCell.xib */; };
 		3A2213742AE5AB4200511D42 /* AnimesDiscoveryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2213732AE5AB4200511D42 /* AnimesDiscoveryResponse.swift */; };
 		3A2213762AE5AEA600511D42 /* AnimesDiscoveryDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2213752AE5AEA600511D42 /* AnimesDiscoveryDetailResponse.swift */; };
 		3A2213792AE5EDCA00511D42 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2213782AE5EDCA00511D42 /* ViewCodeProtocol.swift */; };
-		3A22138D2AE5F31800511D42 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2213872AE5F31800511D42 /* ServiceProtocol.swift */; };
-		3A22138E2AE5F31800511D42 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2213882AE5F31800511D42 /* NetworkService.swift */; };
-		3A22138F2AE5F31800511D42 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2213892AE5F31800511D42 /* HttpMethod.swift */; };
 		3A2213902AE5F31800511D42 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22138A2AE5F31800511D42 /* RequestProtocol.swift */; };
 		3A2213912AE5F31800511D42 /* AnimesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22138B2AE5F31800511D42 /* AnimesRequest.swift */; };
-		3A2213922AE5F31800511D42 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22138C2AE5F31800511D42 /* NetworkError.swift */; };
 		3A2213942AE5F35600511D42 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2213932AE5F35600511D42 /* Observable.swift */; };
 		3A2213962AE5F62D00511D42 /* AnimesListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2213952AE5F62D00511D42 /* AnimesListTableViewModel.swift */; };
 		3A2213982AE5F9AB00511D42 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2213972AE5F9AB00511D42 /* UITableViewCell+Extensions.swift */; };
 		3A4835D12AE5FF51004DDC97 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4835D02AE5FF51004DDC97 /* UIImageView+Extensions.swift */; };
+		3ACB3D212AE7104A00F45106 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB3D202AE7104A00F45106 /* HttpMethod.swift */; };
+		3ACB3D232AE7486A00F45106 /* AnimesListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ACB3D222AE7486A00F45106 /* AnimesListTableViewCell.xib */; };
+		3ACB3D262AE8611B00F45106 /* AnimeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB3D252AE8611B00F45106 /* AnimeDetailViewController.swift */; };
+		3ACB3D282AE8616200F45106 /* AnimeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB3D272AE8616200F45106 /* AnimeDetailViewModel.swift */; };
 		3ACD60272AE5826F007BB173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD60262AE5826F007BB173 /* AppDelegate.swift */; };
 		3ACD60292AE5826F007BB173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD60282AE5826F007BB173 /* SceneDelegate.swift */; };
 		3ACD602E2AE5826F007BB173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACD602C2AE5826F007BB173 /* Main.storyboard */; };
@@ -36,20 +35,19 @@
 		38CDA8A4959D9909102CC27A /* Pods-AnimesDiscovery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimesDiscovery.debug.xcconfig"; path = "Target Support Files/Pods-AnimesDiscovery/Pods-AnimesDiscovery.debug.xcconfig"; sourceTree = "<group>"; };
 		3A22136D2AE588D000511D42 /* AnimesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimesListTableViewController.swift; sourceTree = "<group>"; };
 		3A22136F2AE588FD00511D42 /* AnimesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimesListTableViewCell.swift; sourceTree = "<group>"; };
-		3A2213702AE588FD00511D42 /* AnimesListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimesListTableViewCell.xib; sourceTree = "<group>"; };
 		3A2213732AE5AB4200511D42 /* AnimesDiscoveryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimesDiscoveryResponse.swift; sourceTree = "<group>"; };
 		3A2213752AE5AEA600511D42 /* AnimesDiscoveryDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimesDiscoveryDetailResponse.swift; sourceTree = "<group>"; };
 		3A2213782AE5EDCA00511D42 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
-		3A2213872AE5F31800511D42 /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
-		3A2213882AE5F31800511D42 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		3A2213892AE5F31800511D42 /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		3A22138A2AE5F31800511D42 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		3A22138B2AE5F31800511D42 /* AnimesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimesRequest.swift; sourceTree = "<group>"; };
-		3A22138C2AE5F31800511D42 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		3A2213932AE5F35600511D42 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		3A2213952AE5F62D00511D42 /* AnimesListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimesListTableViewModel.swift; sourceTree = "<group>"; };
 		3A2213972AE5F9AB00511D42 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		3A4835D02AE5FF51004DDC97 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		3ACB3D202AE7104A00F45106 /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		3ACB3D222AE7486A00F45106 /* AnimesListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimesListTableViewCell.xib; sourceTree = "<group>"; };
+		3ACB3D252AE8611B00F45106 /* AnimeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailViewController.swift; sourceTree = "<group>"; };
+		3ACB3D272AE8616200F45106 /* AnimeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailViewModel.swift; sourceTree = "<group>"; };
 		3ACD60232AE5826F007BB173 /* AnimesDiscovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimesDiscovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACD60262AE5826F007BB173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ACD60282AE5826F007BB173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				3A22136D2AE588D000511D42 /* AnimesListTableViewController.swift */,
+				3ACB3D222AE7486A00F45106 /* AnimesListTableViewCell.xib */,
 				3A22136F2AE588FD00511D42 /* AnimesListTableViewCell.swift */,
-				3A2213702AE588FD00511D42 /* AnimesListTableViewCell.xib */,
 				3A2213952AE5F62D00511D42 /* AnimesListTableViewModel.swift */,
 			);
 			path = AnimesList;
@@ -115,14 +113,20 @@
 		3A22137A2AE5EEA000511D42 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3ACB3D202AE7104A00F45106 /* HttpMethod.swift */,
 				3A22138B2AE5F31800511D42 /* AnimesRequest.swift */,
-				3A2213892AE5F31800511D42 /* HttpMethod.swift */,
-				3A22138C2AE5F31800511D42 /* NetworkError.swift */,
-				3A2213882AE5F31800511D42 /* NetworkService.swift */,
 				3A22138A2AE5F31800511D42 /* RequestProtocol.swift */,
-				3A2213872AE5F31800511D42 /* ServiceProtocol.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		3ACB3D242AE860EE00F45106 /* AnimeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3ACB3D252AE8611B00F45106 /* AnimeDetailViewController.swift */,
+				3ACB3D272AE8616200F45106 /* AnimeDetailViewModel.swift */,
+			);
+			path = AnimeDetail;
 			sourceTree = "<group>";
 		};
 		3ACD601A2AE5826F007BB173 = {
@@ -170,6 +174,7 @@
 		3ACD603B2AE58368007BB173 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				3ACB3D242AE860EE00F45106 /* AnimeDetail */,
 				3A22136C2AE587D200511D42 /* AnimesList */,
 			);
 			path = Scenes;
@@ -252,7 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2213722AE588FD00511D42 /* AnimesListTableViewCell.xib in Resources */,
+				3ACB3D232AE7486A00F45106 /* AnimesListTableViewCell.xib in Resources */,
 				3ACD60332AE58271007BB173 /* LaunchScreen.storyboard in Resources */,
 				3ACD60302AE58271007BB173 /* Assets.xcassets in Resources */,
 				3ACD602E2AE5826F007BB173 /* Main.storyboard in Resources */,
@@ -311,19 +316,18 @@
 				3A2213712AE588FD00511D42 /* AnimesListTableViewCell.swift in Sources */,
 				3A2213762AE5AEA600511D42 /* AnimesDiscoveryDetailResponse.swift in Sources */,
 				3A2213912AE5F31800511D42 /* AnimesRequest.swift in Sources */,
-				3A22138F2AE5F31800511D42 /* HttpMethod.swift in Sources */,
 				3A4835D12AE5FF51004DDC97 /* UIImageView+Extensions.swift in Sources */,
 				3A2213742AE5AB4200511D42 /* AnimesDiscoveryResponse.swift in Sources */,
-				3A22138D2AE5F31800511D42 /* ServiceProtocol.swift in Sources */,
-				3A22138E2AE5F31800511D42 /* NetworkService.swift in Sources */,
 				3A2213902AE5F31800511D42 /* RequestProtocol.swift in Sources */,
 				3ACD60272AE5826F007BB173 /* AppDelegate.swift in Sources */,
 				3A2213792AE5EDCA00511D42 /* ViewCodeProtocol.swift in Sources */,
 				3A2213942AE5F35600511D42 /* Observable.swift in Sources */,
-				3A2213922AE5F31800511D42 /* NetworkError.swift in Sources */,
 				3A22136E2AE588D000511D42 /* AnimesListTableViewController.swift in Sources */,
+				3ACB3D212AE7104A00F45106 /* HttpMethod.swift in Sources */,
 				3ACD60292AE5826F007BB173 /* SceneDelegate.swift in Sources */,
+				3ACB3D262AE8611B00F45106 /* AnimeDetailViewController.swift in Sources */,
 				3A2213982AE5F9AB00511D42 /* UITableViewCell+Extensions.swift in Sources */,
+				3ACB3D282AE8616200F45106 /* AnimeDetailViewModel.swift in Sources */,
 				3A2213962AE5F62D00511D42 /* AnimesListTableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

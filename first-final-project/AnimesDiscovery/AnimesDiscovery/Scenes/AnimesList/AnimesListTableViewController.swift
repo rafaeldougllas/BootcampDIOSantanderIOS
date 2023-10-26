@@ -9,10 +9,14 @@ import UIKit
 
 class AnimesListTableViewController: UITableViewController {
     
-    let viewModel = AnimesListTableViewModel(service: NetworkService())
+    let viewModel = AnimesListTableViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(UINib(nibName: AnimesListTableViewCell.identifier, bundle: nil),
+                           forCellReuseIdentifier: AnimesListTableViewCell.identifier)
+        tableView.register(UINib(nibName: "EmptyViewCell", bundle: nil), forCellReuseIdentifier: "EmptyViewCell")
 
         viewModel.dataSource.bind { [weak self] _ in
             DispatchQueue.main.async {
@@ -21,11 +25,7 @@ class AnimesListTableViewController: UITableViewController {
         }
         
         Task {
-            do {
-                try await viewModel.fetchDiscoveryAnimes()
-            } catch let error as NetworkError {
-                print("Erro ->", error.description)
-            }
+            viewModel.fetchDiscoveryAnimes()
         }
     }
 
@@ -47,17 +47,18 @@ class AnimesListTableViewController: UITableViewController {
             cell.setup(anime: animeModel)
             return cell
         }
-        return tableView.dequeueReusableCell(withIdentifier: "EmptyViewCell", for: indexPath)
+        return UITableViewCell()
+        //return tableView.dequeueReusableCell(withIdentifier: "EmptyViewCell", for: indexPath)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+        76
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        /*if let animeModel = viewModel.dataSource.value?[indexPath.row] {
-            navigationController?.pushViewController(DetailsViewController(model: model), animated: true)
-        }*/
+        if let animeModel = viewModel.dataSource.value?[indexPath.row] {
+            navigationController?.pushViewController(AnimeDetailViewController(viewMode: .init(animeId: animeModel.entry[0].malId)), animated: true)
+        }
     }
 }

@@ -47,12 +47,12 @@ struct AnimesShortDescription: Codable {
     }
 
     let content: String
-    let date: Date
+    let date: String
     let entry: [Entry]
     let malId: String
     let user: User
 
-    init(content: String, date: Date, entry: [Entry], malId: String, user: User) {
+    init(content: String, date: String, entry: [Entry], malId: String, user: User) {
         self.content = content
         self.date = date
         self.entry = entry

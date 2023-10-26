@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol Request {
+public protocol RequestProtocol {
     var scheme: String { get }
     var baseURL: String { get }
     var path: String { get }
@@ -19,14 +19,14 @@ public protocol Request {
     var body: [String: Any]? { get }
 }
 
-public extension Request {
+public extension RequestProtocol {
     
     var scheme: String {
         "https"
     }
     
     var baseURL: String {
-        Bundle.main.object(forInfoDictionaryKey: "BaseURL") as? String ?? ""
+        "https://api.jikan.moe/v4/"
     }
     
     var port: Int? {

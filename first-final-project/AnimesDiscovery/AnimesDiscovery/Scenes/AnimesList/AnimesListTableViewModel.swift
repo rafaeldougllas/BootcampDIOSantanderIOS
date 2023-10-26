@@ -6,22 +6,23 @@
 //
 
 import Foundation
+import Alamofire
 
 final class AnimesListTableViewModel {
     
-    private let service: ServiceProtocol
     var dataSource: Observable<[AnimesShortDescription]> = Observable(value: [])
-    
-    init(service: ServiceProtocol) {
-        self.service = service
-    }
     
     var dataSourceCount: Int {
         dataSource.value?.count ?? 0
     }
     
-    func fetchDiscoveryAnimes() async throws {
-        let response: AnimesDiscoveryResponse = try await service.request(AnimesRequest.animesList)
-        dataSource.value = response.data
+    func fetchDiscoveryAnimes() {
+        let request = AnimesRequest.animesList
+        AF.request(request.baseURL+request.path).responseDecodable(of: AnimesDiscoveryResponse.self) { [weak self] (response) in
+            guard let self = self else { return }
+            if case let .success(animeResponse) = response.result {
+                self.dataSource.value = animeResponse.data
+            }
+        }
     }
 }

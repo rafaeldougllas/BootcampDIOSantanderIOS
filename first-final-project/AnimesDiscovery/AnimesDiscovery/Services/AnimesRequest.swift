@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum AnimesRequest: Request {
+public enum AnimesRequest: RequestProtocol {
 
     case animesList
     case anime(id: String)
@@ -15,9 +15,9 @@ public enum AnimesRequest: Request {
     public var path: String {
         switch self {
         case .animesList:
-            "/recommendations/anime"
+            "recommendations/anime"
         case .anime(id: let id):
-            "/anime/\(id)"
+            "anime/\(id)"
         }
     }
     

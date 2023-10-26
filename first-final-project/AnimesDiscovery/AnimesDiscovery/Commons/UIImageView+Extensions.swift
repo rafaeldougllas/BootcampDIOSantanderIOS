@@ -6,12 +6,16 @@
 //
 
 import UIKit
-import Kingfisher
+import Alamofire
+import AlamofireImage
 
 extension UIImageView {
     func loadImage(url: String, placeHolder: UIImage = UIImage(systemName: "photo")!) {
-        if let url = URL(string: url) {
-            self.kf.setImage(with: url, placeholder: placeHolder, options: [.transition(.fade(1))], completionHandler: nil)
+        self.image = placeHolder
+        AF.request(url).responseImage { response in
+            if case .success(let image) = response.result {
+                self.image = image
+            }
         }
     }
 }
