@@ -12,48 +12,44 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" userLabel="AnimesListTableViewCell" customClass="AnimesListTableViewCell" customModule="AnimesDiscovery" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="372" height="102"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="372" height="102"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHy-fw-Mkx">
-                        <rect key="frame" x="185.66666666666666" y="5" width="1" height="92"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="1" id="9kZ-ra-cqU"/>
-                        </constraints>
-                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8D1-yU-H44">
-                        <rect key="frame" x="8" y="9.6666666666666643" width="169.66666666666666" height="83"/>
+                        <rect key="frame" x="8" y="9.6666666666666643" width="90" height="97"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="8Og-tx-cRo"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="YdC-aZ-tQZ"/>
+                            <constraint firstAttribute="height" constant="100" id="d4p-8i-17z"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="86" id="fHs-Fr-znB"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do anime" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tb-nK-hLy" customClass="AnimesList">
-                        <rect key="frame" x="194.66666666666663" y="8.0000000000000018" width="169.33333333333337" height="21.666666666666671"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xq9-s9-gLI">
-                        <rect key="frame" x="194.66666666666663" y="73.666666666666671" width="169.33333333333337" height="20.333333333333329"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="H1s-Dt-JQZ">
+                        <rect key="frame" x="106" y="40" width="258" height="36.333333333333343"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do anime" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tb-nK-hLy" customClass="AnimesList">
+                                <rect key="frame" x="0.0" y="0.0" width="258" height="19.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xq9-s9-gLI">
+                                <rect key="frame" x="0.0" y="19.333333333333336" width="258" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="xq9-s9-gLI" secondAttribute="trailing" constant="8" id="77d-iK-eZ0"/>
-                    <constraint firstAttribute="trailing" secondItem="6Tb-nK-hLy" secondAttribute="trailing" constant="8" id="G6I-KS-99Y"/>
-                    <constraint firstItem="6Tb-nK-hLy" firstAttribute="leading" secondItem="eHy-fw-Mkx" secondAttribute="trailing" constant="8" id="IgC-0e-X5b"/>
+                    <constraint firstItem="H1s-Dt-JQZ" firstAttribute="leading" secondItem="8D1-yU-H44" secondAttribute="trailing" constant="8" id="0M5-ip-ZQI"/>
+                    <constraint firstAttribute="trailing" secondItem="H1s-Dt-JQZ" secondAttribute="trailing" constant="8" id="706-Oz-Cla"/>
+                    <constraint firstItem="H1s-Dt-JQZ" firstAttribute="centerY" secondItem="8D1-yU-H44" secondAttribute="centerY" id="BX5-ZF-oN0"/>
                     <constraint firstItem="8D1-yU-H44" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Kzm-Qq-4Ri"/>
                     <constraint firstItem="8D1-yU-H44" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="LQG-Zx-l6t"/>
-                    <constraint firstAttribute="bottom" secondItem="xq9-s9-gLI" secondAttribute="bottom" constant="8" id="Ri9-vW-Y8c"/>
-                    <constraint firstItem="eHy-fw-Mkx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Zei-iS-u7P"/>
                     <constraint firstAttribute="bottom" secondItem="8D1-yU-H44" secondAttribute="bottom" constant="8" id="azq-bR-rca"/>
-                    <constraint firstItem="xq9-s9-gLI" firstAttribute="leading" secondItem="eHy-fw-Mkx" secondAttribute="trailing" constant="8" id="bfi-0b-nKq"/>
-                    <constraint firstItem="6Tb-nK-hLy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="kCm-yM-95H"/>
-                    <constraint firstItem="eHy-fw-Mkx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="sNd-pz-ddy"/>
-                    <constraint firstAttribute="bottom" secondItem="eHy-fw-Mkx" secondAttribute="bottom" constant="5" id="tya-ch-Fye"/>
-                    <constraint firstItem="eHy-fw-Mkx" firstAttribute="leading" secondItem="8D1-yU-H44" secondAttribute="trailing" constant="8" id="uHc-8y-5hg"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
